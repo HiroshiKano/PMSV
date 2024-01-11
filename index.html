@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="initial-scale=0.5, user-scalable=yes">
+<meta name="viewport" content="initial-scale=0.6, user-scalable=yes">
 <title>ポケモンSV図鑑</title>
 
 <style type="text/css">
@@ -104,8 +104,12 @@ function onClick()
 </head>
 
 <body onload="webMain()">
+<table id="dic" style="border-collapse: collapse; position: relative; top: 110px">
+<tr><th width="150"></th><th width="150"></th><th width="150"></th><th width="150"></th></tr>
+</table>
+
 <form id="filter">
-<table style="border-collapse: collapse">
+<table style="border-collapse: collapse; position: fixed; top: 5px; background-color: white">
 <tr>
 <td colspan="2" onclick="onClick()"><input type="radio" name="dicsel" value="P">パルデア図鑑</td>
 <td colspan="2" onclick="onClick()"><input type="radio" name="dicsel" value="K">キタカミ図鑑</td>
@@ -135,9 +139,6 @@ function onClick()
 <td onclick="onClick()"><input type="radio" name="typefil" value="t18"><img class="t18">フェアリー</td>
 </tr></table></form>
 
-<table id="dic" style="border-collapse: collapse">
-<tr><th width="150"></th><th width="150"></th><th width="150"></th><th width="150"></th></tr>
-</table>
 </body>
 
 <script type="text/javascript">
@@ -670,8 +671,10 @@ K: [
 	{	id:73,	t1:"t01",	t2:"t00",	i:31,	name:"ヨクバリス"	},
 	{	id:74,	t1:"t05",	t2:"t12",	i:278,	name:"ノノクラゲ"	},
 	{	id:75,	t1:"t05",	t2:"t12",	i:279,	name:"リククラゲ"	},
-	{	id:76,	t1:"t12",	t2:"t08",	i:489,	name:"チャデス"	},
-	{	id:77,	t1:"t12",	t2:"t08",	i:490,	name:"ヤバソチャ"	},
+	{	id:76,	t1:"t12",	t2:"t08",	i:489,	name:"チャデス",	form:"マガイモノのすがた"	},
+	{	id:76,	t1:"t12",	t2:"t08",	i:489,	name:"チャデス",	form:"タカイモノのすがた"	},
+	{	id:77,	t1:"t12",	t2:"t08",	i:490,	name:"ヤバソチャ",	form:"ボンサクのすがた"	},
+	{	id:77,	t1:"t12",	t2:"t08",	i:490,	name:"ヤバソチャ",	form:"ケッサクのすがた"	},
 	{	id:78,	t1:"t10",	t2:"t00",	i:243,	name:"ガーディ"	},
 	{	id:79,	t1:"t10",	t2:"t00",	i:244,	name:"ウインディ"	},
 	{	id:80,	t1:"t06",	t2:"t05",	i:491,	name:"イシツブテ"	},
